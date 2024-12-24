@@ -1,10 +1,18 @@
 {
+  "homepage": "https://username.github.io/repository-name",
+  
   "name": "modern-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    
     "build":"next build",
+    "build": "vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+
+    
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
